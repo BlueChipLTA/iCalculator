@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="LightTheme" parent="@android:style/Theme.Material.Light">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:colorPrimary">@color/light_calculator_primary_color</item>
+        <item name="android:colorAccent">@color/light_calculator_accent_color</item>
+        <item name="android:titleTextColor">@android:color/black</item>
+        <item name="android:statusBarColor">@color/light_calculator_statusbar_color</item>
+        <item name="android:navigationBarColor">@color/light_calculator_statusbar_color</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
+        <item name="att_display_formula_text_color">@color/light_display_formula_text_color</item>
+        <item name="att_display_result_text_color">@color/light_display_result_text_color</item>
+        <item name="att_display_background_color">@color/light_display_background_color</item>
+        <item name="att_pad_numeric_background_color">@color/light_pad_numeric_background_color
+        </item>
+        <item name="att_pad_operator_text_color">@color/att_pad_operator_text_color</item>
+        <item name="att_pad_operator_background_color">@color/light_pad_operator_background_color
+        </item>
+        <item name="att_pad_advanced_background_color">@color/light_pad_advanced_background_color
+        </item>
+        <item name="att_pad_button_text_color">@color/light_pad_button_text_color</item>
+        <item name="att_pad_button_advanced_text_color">
+            @color/light_pad_button_advanced_text_color
+        </item>
+        <item name="att_pad_button_advanced_ripple_color">
+            @color/light_pad_button_advanced_ripple_color
+        </item>
+        <item name="att_pad_button_ripple_color">@color/light_pad_button_ripple_color</item>
+        <item name="att_display_result_exponent_text_color">
+            @color/light_display_result_exponent_text_color
+        </item>
+        <item name="att_pad_button_boder_color">@color/light_pad_button_boder_color</item>
+        <item name="att_pad_button_inv_background_color">
+            @color/light_pad_button_inv_background_color
+        </item>
+        <item name="att_pad_button_inv_border_color">@color/light_pad_button_inv_border_color</item>
+        <item name="att_drag_color">@color/light_drag_color</item>
+        <item name="att_equal_color">@color/light_equal_color</item>
+        <item name="att_equal_text_color">@color/equal_text_color</item>
+        <item name="att_equal_pressed_color">@color/light_pressed_equal_color</item>
+        <item name="att_number_pressed_color">@color/light_number_pressed_color</item>
+        <item name="att_border_land_color">@color/light_border_land_color</item>
+        <item name="att_drag_background_color">@color/light_att_drag_background_color</item>
+        <item name="att_title_mode_color">@color/light_att_title_mode_color</item>
+        <item name="toolbar_text_color">@android:color/black</item>
+        <item name="colorPopupMenuBackground">@color/popup_menu_backgound</item>
+        <item name="colorPopupMenuText">@color/popup_text_color</item>
+        <item name="android:actionModeBackground">@color/att_title_mode_color</item>
+        <item name="android:colorControlNormal">@color/light_display_control_color</item>
+        <item name="android:colorControlHighlight">@color/light_display_formula_text_color</item>
+    </style>
+
+    <style name="ToolBarTheme.LightToolBarStyle" parent="@android:style/Theme.Material.Light">
+        <item name="android:textColorPrimary">@color/light_display_formula_text_color</item>
+        <item name="android:textColorSecondary">#FFFFFF</item>
+        <item name="android:colorControlNormal">@color/light_display_control_color</item>
+        <item name="android:colorControlHighlight">@color/light_display_formula_text_color</item>
+    </style>
+
+</resources>

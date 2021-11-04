@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:color="?attr/att_pad_button_inv_border_color" android:state_selected="true" />
+
+    <item android:color="?att_pad_button_advanced_text_color" />
+
+</selector>

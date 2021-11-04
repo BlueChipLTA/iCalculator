@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_pad_advanced_1x5"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:background="?att_pad_advanced_background_color"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+    <com.android.calculator2.view.SquareButton
+        android:id="@+id/op_fact"
+        style="@style/PadButtonStyle.Advanced"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/pad_button_advanced_background_selector"
+        android:contentDescription="@string/desc_op_fact"
+        android:text="@string/op_fact" />
+
+    <com.android.calculator2.view.SquareButton
+        android:id="@+id/op_pow"
+        style="@style/PadButtonStyle.Advanced"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/pad_button_advanced_background_selector"
+        android:contentDescription="@string/desc_op_pow"
+        android:text="@string/op_pow" />
+
+    <com.android.calculator2.view.SquareButton
+        android:id="@+id/op_sqr"
+        style="@style/PadButtonStyle.Advanced"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/pad_button_advanced_background_selector"
+        android:contentDescription="@string/desc_op_sqr"
+        android:text="@string/op_sqr" />
+
+
+    <com.android.calculator2.view.SquareButton
+        android:id="@+id/toggle_mode"
+        style="@style/PadButtonStyle.Advanced.Text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/pad_button_advanced_background_selector"
+        android:contentDescription="@string/desc_switch_deg"
+        android:text="@string/mode_deg"
+        android:textColor="@drawable/inv_text_color_selector" />
+
+
+    <com.android.calculator2.view.SquareButton
+        android:id="@+id/toggle_inv"
+        style="@style/PadButtonStyle.Advanced.Text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/pad_button_advanced_background_selector"
+        android:contentDescription="@string/desc_inv_off"
+        android:text="@string/inv"
+        android:textColor="@drawable/inv_text_color_selector" />
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  Copyright (C) 2015 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<resources>
+
+    <!-- Default accent color. -->
+    <color name="calculator_accent_color">#6FCBDE</color>
+    <color name="light_calculator_accent_color">#6FCBDE</color>
+
+    <!-- Primary color (Color for the toolbars). -->
+    <color name="calculator_primary_color">#6FCBDE</color>
+    <color name="light_calculator_primary_color">#6FCBDE</color>
+
+    <!-- Color to indicate an error has occured. -->
+    <color name="calculator_error_color">#C2185B</color>
+
+    <!-- Lighter color for exponent while scrolling. -->
+    <color name="display_result_exponent_text_color">#40ffffff</color>
+    <color name="light_display_result_exponent_text_color">#40000000</color>
+
+    <!-- Ripple color when a button is pressed in a pad. -->
+    <color name="pad_button_ripple_color">#8B8B8B</color>
+    <color name="light_pad_button_ripple_color">#E9E9E9</color>
+
+    <!-- Ripple color when a button is pressed in a pad. -->
+    <color name="pad_button_advanced_ripple_color">#8B8B8B</color>
+    <color name="light_pad_button_advanced_ripple_color">#E9E9E9</color>
+
+    <!-- color when button inv is pressed. -->
+    <color name="pad_button_inv_background_color">#FFFFFF</color>
+    <color name="light_pad_button_inv_background_color">#FFFFFF</color>
+
+    <!-- border when button inv is unpressed. -->
+    <color name="pad_button_inv_border_color">#4A4A4A</color>
+    <color name="light_pad_button_inv_border_color">#4A4A4A</color>
+
+    <!-- Text color for a button in a pad. -->
+    <color name="pad_button_text_color">#D9FFFFFF</color>
+    <color name="light_pad_button_text_color">#565656</color>
+
+    <!-- Border color for a button in a pad. -->
+    <color name="pad_button_boder_color">#BF4B4B4B</color>
+    <color name="light_pad_button_boder_color">#BFDFDFDF</color>
+
+    <!-- Text color for a button in the advanced pad. -->
+    <color name="pad_button_advanced_text_color">#34AFC8</color>
+    <color name="light_pad_button_advanced_text_color">#34AFC8</color>
+
+    <!-- Background color for the advanced pad. -->
+    <color name="pad_advanced_background_color">#333333</color>
+    <color name="light_pad_advanced_background_color">#F8F8F8</color>
+
+    <!-- Background color for the operator pad. -->
+    <color name="pad_operator_background_color">#333333</color>
+    <color name="light_pad_operator_background_color">#FFFFFF</color>
+
+    <!-- Background color for the numeric pad. -->
+    <color name="pad_numeric_background_color">#292929</color>
+    <color name="light_pad_numeric_background_color">#FFFFFF</color>
+
+    <!-- Background color for the operator text -->
+    <color name="att_pad_operator_text_color">#34AFC8</color>
+    <color name="att_pad_operator_text_color_dark">#34AFC8</color>
+
+    <!-- Background color for empty history view. -->
+    <color name="empty_history_color">#131618</color>
+    <color name="light_empty_history_color">#FFFFFF</color>
+
+    <!-- Background color of the calculator display. -->
+    <color name="display_background_color">#131618</color>
+    <color name="light_display_background_color">#FFFFFF</color>
+
+    <!-- Text color for the formula in the calculator display. -->
+    <color name="display_formula_text_color">#B2ffffff</color>
+    <color name="display_toolbar_text_color">#66000000</color>
+    <color name="light_display_formula_text_color">#4A4A4A</color>
+
+    <!-- Text color for the result in the calculator display. -->
+    <color name="display_result_text_color">#47C3DC</color>
+    <color name="light_display_result_text_color">#47C3DC</color>
+
+    <!-- Status bar color. -->
+    <color name="calculator_statusbar_color">#000000</color>
+    <color name="light_calculator_statusbar_color">#ffffff</color>
+
+    <!-- Drag icon color. -->
+    <color name="drag_color">#555555</color>
+    <color name="light_drag_color">#D5D5D5</color>
+
+    <color name="equal_color">#47C3DC</color>
+    <color name="light_equal_color">#6FCBDE</color>
+
+    <color name="equal_pressed_color">#806FCBDE</color>
+    <color name="light_pressed_equal_color">#806FCBDE</color>
+
+    <color name="equal_text_color">#FFFFFF</color>
+    <color name="equal_text_color_dark">#FFFFFF</color>
+
+    <color name="number_pressed_color">#2D4044</color>
+    <color name="light_number_pressed_color">#DAF3F8</color>
+
+    <color name="border_land_color">#00FFFFFF</color>
+    <color name="light_border_land_color">#E9E9E9</color>
+
+    <color name="att_drag_background_color">#4047C3DC</color>
+    <color name="light_att_drag_background_color">#8047C3DC</color>
+
+    <color name="att_title_mode_color">#47C3DC</color>
+    <color name="light_att_title_mode_color">#747474</color>
+
+    <color name="popup_menu_backgound_dark">#3C4043</color>
+    <color name="colorPopupMenuTextDark">#BFBFBF</color>
+    <color name="popup_menu_backgound">#ffffff</color>
+    <color name="popup_text_color">#363636</color>
+
+    <color name="light_display_control_color">#787878</color>
+
+</resources>

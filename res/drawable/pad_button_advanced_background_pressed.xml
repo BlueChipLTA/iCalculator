@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="?attr/att_number_pressed_color" />
+
+    <stroke
+        android:color="?att_pad_button_boder_color"
+        android:width="0.25dp" />
+</shape>

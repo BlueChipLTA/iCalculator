@@ -1,0 +1,125 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.0'
+    }
+}
+
+/**
+ * This line applies the com.android.application plugin. Note that you should
+ * only apply the com.android.application plugin. Applying the Java plugin as
+ * well will result in a build error.
+ */
+apply plugin: 'com.android.application'
+
+repositories {
+    jcenter()
+    google()
+}
+
+gradle.projectsEvaluated {
+    tasks.withType(JavaCompile) {
+        options.compilerArgs.add('-Xbootclasspath/p:sys_libs/framework.jar')
+    }
+}
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        minSdkVersion 28
+        targetSdkVersion 29
+        applicationId "com.bluechip.ios.calculator"
+        versionCode 30401
+        versionName "3.4.1"
+        multiDexEnabled true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    /**
+     * This nested sourceSets block points the source code directories to the
+     * existing folders in the project, instead of using the default new
+     * organization.
+     */
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['jni']
+        }
+
+        // Move the tests to tests/java, tests/res, etc...
+        androidTest.setRoot('tests')
+
+        /**
+         * Move the build types to build-types/<type>
+         * For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+         * This moves them out of them default location under src/<type>/... which would
+         * conflict with src/ being used by the main source set.
+         * Adding new build types or product flavors should be accompanied
+         * by a similar customization.
+         */
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+    //    externalNativeBuild {
+    //        ndkBuild {
+    //            path 'jni/Android.mk'
+    //        }
+    //    }
+    if (project.hasProperty("RELEASE_STORE_FILE")) {
+        signingConfigs {
+            platform {
+                storeFile file("platform10.keystore")
+                storePassword RELEASE_STORE_PASSWORD
+                keyAlias RELEASE_KEY_ALIAS
+                keyPassword RELEASE_KEY_PASSWORD
+            }
+        }
+        buildTypes {
+            debug {
+                minifyEnabled false
+                debuggable true
+                signingConfig signingConfigs.platform
+                versionNameSuffix ".debug"
+
+            }
+            release {
+                minifyEnabled true
+                shrinkResources true
+                debuggable false
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+                signingConfig signingConfigs.platform
+            }
+        }
+    }
+
+    flavorDimensions "default"
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    implementation project(':module-cr-lib')
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0-alpha06'
+    compileOnly files('sys_libs/framework.jar')
+    implementation files('sys_libs/sysui_shared.jar')
+}
+
+task customClean(type: Delete) {
+    delete rootProject.buildDir
+}
+clean.dependsOn customClean
